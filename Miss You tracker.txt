@@ -50,7 +50,7 @@
 
 <script>
 const messages = [
-  "I'm always thinking about you kannalu💭",
+"I'm always thinking about you kannalu💭",
   "I don't know if I love you more than you love me, but I truly miss you more than you miss me bujjuuluu❤️",
   "Every second feels like an hour without you kanna⌛",
   "I love you forever and ever♾️",
@@ -121,8 +121,6 @@ const messages = [
   "Sometimes, I just sit and smile remembering how we started❤️",
   "I want to walk our journey of life with you soon❤️",
   "Even in another life, I'll find you❤️"
-
-
 ];
 
 function missYou() {
@@ -138,7 +136,7 @@ function missYou() {
   })
   .then(response => {
     if (!response.ok) {
-      throw new Error(HTTP error! status: ${response.status});
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
     return response.json();
   })
